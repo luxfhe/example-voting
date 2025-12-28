@@ -155,15 +155,15 @@ $ pnpm deploy:contracts"
 Deploy a new instance of the Counter contract via a task:
 
 ```sh
-$ pnpm task:deployCounter --network localfhenix
+$ pnpm task:deployCounter --network localluxfhe
 ```
 
 #### Add count
 
-Run the `addCount` task on the LocalFhenix network:
+Run the `addCount` task on the Localluxfhe network:
 
 ```sh
-$ pnpm task:addCount --network localfhenix --amount 12 --account 3
+$ pnpm task:addCount --network localluxfhe --amount 12 --account 3
 ```
 
 ## Tips
@@ -182,22 +182,22 @@ on/off.
 
 ## Local development with Ganache
 
-### Install LocalFhenix
+### Install Localluxfhe
 
-LocalFhenix is available through a docker image. To pull it, run:
+Localluxfhe is available through a docker image. To pull it, run:
 
 ```sh
-$ docker pull ghcr.io/fhenixprotocol/fhenix-devnet:0.1.5
+$ docker pull ghcr.io/luxfheprotocol/luxfhe-devnet:0.1.5
 ```
 
 ### Run a Development Blockchain
 
 ```sh
 $ docker run -it -p 8545:8545 -p 6000:6000 \
-  --name localfhenix ghcr.io/fhenixprotocol/fhenix-devnet:0.1.5
+  --name localluxfhe ghcr.io/luxfheprotocol/luxfhe-devnet:0.1.5
 ```
 
-Make sure to set the mnemonic in your `.env` file to that of the instance running with LocalFhenix.
+Make sure to set the mnemonic in your `.env` file to that of the instance running with Localluxfhe.
 
 ## License
 
