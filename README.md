@@ -187,14 +187,14 @@ on/off.
 Localluxfhe is available through a docker image. To pull it, run:
 
 ```sh
-$ docker pull ghcr.io/luxfheprotocol/luxfhe-devnet:0.1.5
+$ docker pull ghcr.io/luxfhe/luxfhe-devnet:0.1.5
 ```
 
 ### Run a Development Blockchain
 
 ```sh
 $ docker run -it -p 8545:8545 -p 6000:6000 \
-  --name localluxfhe ghcr.io/luxfheprotocol/luxfhe-devnet:0.1.5
+  --name localluxfhe ghcr.io/luxfhe/luxfhe-devnet:0.1.5
 ```
 
 Make sure to set the mnemonic in your `.env` file to that of the instance running with Localluxfhe.
